@@ -4,8 +4,6 @@ class Solution(object):
 
         for i, num in enumerate(nums):
             sub = target - num
-            
             if sub in L:
                 return [L[sub], i]
-
             L[num] = i
